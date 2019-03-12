@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>FaceRecognitionSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.pm.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginUserServlet</servlet-name>
+    <servlet-class>com.pm.servlet.LoginUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginUserServlet</servlet-name>
+    <url-pattern>/LoginUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginService</servlet-name>
+    <servlet-class>com.pm.service.LoginService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginService</servlet-name>
+    <url-pattern>/servlet/LoginService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.pm.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/servlet/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DelUserServlet</servlet-name>
+    <servlet-class>com.pm.servlet.DelUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DelUserServlet</servlet-name>
+    <url-pattern>/servlet/DelUserServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
